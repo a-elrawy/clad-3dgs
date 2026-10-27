@@ -1,0 +1,10 @@
+# Install the CUDA 12.1 Torch 2.5.1 wheel separately; see SETUP.md.
+numpy
+Pillow
+plyfile
+tqdm
+joblib
+opencv-python-headless
+ninja
+setuptools
+wheel

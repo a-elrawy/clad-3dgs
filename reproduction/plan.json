@@ -1,0 +1,71 @@
+{
+  "full_training_trajectories_max": 2,
+  "scenes": [
+    "Train"
+  ],
+  "seeds": [
+    42
+  ],
+  "final_global_iteration": 30000,
+  "stage_endpoints": [
+    7000,
+    15000,
+    30000
+  ],
+  "mode_order_by_stage": [
+    [
+      "native",
+      "clad"
+    ],
+    [
+      "clad",
+      "native"
+    ],
+    [
+      "native",
+      "clad"
+    ]
+  ],
+  "budget": {
+    "main_loop_updates_upper_bound": 60000,
+    "short_probe_checkpoints": [],
+    "probe_modes": [
+      "native",
+      "native-aa",
+      "clad"
+    ],
+    "probe_warmup_blocks_per_mode": 3,
+    "probe_measured_blocks_per_mode": 12,
+    "updates_per_probe_block": 10,
+    "short_probe_updates_total": 0,
+    "short_probe_iteration_overhead_percent": 0,
+    "probe_untimed_note": "No additional checkpoint probes; the two-scene refinement comparisons already exist.",
+    "probe_terminal_checks_total": 0,
+    "short_probe_iterations_including_terminal_checks": 0
+  },
+  "quality_limits": {
+    "psnr_drop_db_max_per_view": null,
+    "objective_increase_fraction_max_per_view": 0.02
+  },
+  "timing": {
+    "host_clock": "CLOCK_MONOTONIC_RAW when supported",
+    "secondary": "CUDA events",
+    "native_AA_max_percent": 1,
+    "no_automatic_retry": true,
+    "no_trimming": true,
+    "full_job_wall_time_is_one_paired_observation": true
+  },
+  "description": "One fresh matched Train/seed-42 pair: unchanged native renderer versus current Clad SH/activation consumers with full-warp pixel-gradient aggregation. No probes, retries or extra scenes.",
+  "native_options": {
+    "eval": true,
+    "resolution": -1,
+    "data_device": "cpu"
+  },
+  "acceptance": {
+    "metric": "relative increase of arithmetic mean held-out objective (0.8 L1 + 0.2 (1 - fused SSIM))",
+    "maximum_fraction": 0.02,
+    "preferred_fraction": 0.01,
+    "worst_views": "report only",
+    "per_view_limits": "diagnostic only; do not stop on one view"
+  }
+}

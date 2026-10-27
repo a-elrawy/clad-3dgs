@@ -1,0 +1,586 @@
+{
+  "native": {
+    "metrics": [
+      {
+        "split": "train",
+        "camera": "00002.jpg",
+        "objective": 0.04419650733470917,
+        "psnr": 26.082026000522088
+      },
+      {
+        "split": "train",
+        "camera": "00035.jpg",
+        "objective": 0.040220560133457185,
+        "psnr": 27.537397667547165
+      },
+      {
+        "split": "train",
+        "camera": "00068.jpg",
+        "objective": 0.05264547169208526,
+        "psnr": 25.21078586129269
+      },
+      {
+        "split": "train",
+        "camera": "00101.jpg",
+        "objective": 0.036034627258777624,
+        "psnr": 28.35567573833515
+      },
+      {
+        "split": "train",
+        "camera": "00134.jpg",
+        "objective": 0.05758516192436218,
+        "psnr": 24.7014799996519
+      },
+      {
+        "split": "train",
+        "camera": "00167.jpg",
+        "objective": 0.055702733993530276,
+        "psnr": 24.681326740180847
+      },
+      {
+        "split": "train",
+        "camera": "00200.jpg",
+        "objective": 0.046550375223159794,
+        "psnr": 26.57750480080464
+      },
+      {
+        "split": "train",
+        "camera": "00234.jpg",
+        "objective": 0.03063664883375168,
+        "psnr": 30.372769644539485
+      },
+      {
+        "split": "train",
+        "camera": "00267.jpg",
+        "objective": 0.053173863887786874,
+        "psnr": 25.716981403098558
+      },
+      {
+        "split": "train",
+        "camera": "00301.jpg",
+        "objective": 0.039488485455513006,
+        "psnr": 27.347004817194733
+      },
+      {
+        "split": "heldout",
+        "camera": "00001.jpg",
+        "objective": 0.06460706591606141,
+        "psnr": 22.73007481791278
+      },
+      {
+        "split": "heldout",
+        "camera": "00009.jpg",
+        "objective": 0.05997624695301056,
+        "psnr": 23.474080648154093
+      },
+      {
+        "split": "heldout",
+        "camera": "00017.jpg",
+        "objective": 0.038159689307212835,
+        "psnr": 26.7163890064463
+      },
+      {
+        "split": "heldout",
+        "camera": "00025.jpg",
+        "objective": 0.07428072392940521,
+        "psnr": 23.019366397836897
+      },
+      {
+        "split": "heldout",
+        "camera": "00033.jpg",
+        "objective": 0.05750538408756256,
+        "psnr": 24.166268573724263
+      },
+      {
+        "split": "heldout",
+        "camera": "00041.jpg",
+        "objective": 0.05548981428146363,
+        "psnr": 24.578272407253323
+      },
+      {
+        "split": "heldout",
+        "camera": "00049.jpg",
+        "objective": 0.06597720682621003,
+        "psnr": 23.10889248856902
+      },
+      {
+        "split": "heldout",
+        "camera": "00057.jpg",
+        "objective": 0.07125917971134185,
+        "psnr": 23.18836117617507
+      },
+      {
+        "split": "heldout",
+        "camera": "00065.jpg",
+        "objective": 0.06046739518642426,
+        "psnr": 24.53876499643656
+      },
+      {
+        "split": "heldout",
+        "camera": "00073.jpg",
+        "objective": 0.06674459278583528,
+        "psnr": 23.30300574753715
+      },
+      {
+        "split": "heldout",
+        "camera": "00081.jpg",
+        "objective": 0.07170944511890412,
+        "psnr": 22.260981343310572
+      },
+      {
+        "split": "heldout",
+        "camera": "00089.jpg",
+        "objective": 0.13252212405204775,
+        "psnr": 18.47666910493053
+      },
+      {
+        "split": "heldout",
+        "camera": "00097.jpg",
+        "objective": 0.04476031064987183,
+        "psnr": 25.806282524234064
+      },
+      {
+        "split": "heldout",
+        "camera": "00105.jpg",
+        "objective": 0.04846005439758301,
+        "psnr": 26.186948597365998
+      },
+      {
+        "split": "heldout",
+        "camera": "00113.jpg",
+        "objective": 0.1192776620388031,
+        "psnr": 17.936366912598633
+      },
+      {
+        "split": "heldout",
+        "camera": "00121.jpg",
+        "objective": 0.08188922107219695,
+        "psnr": 21.91047176992815
+      },
+      {
+        "split": "heldout",
+        "camera": "00129.jpg",
+        "objective": 0.10972389578819275,
+        "psnr": 18.605326073321443
+      },
+      {
+        "split": "heldout",
+        "camera": "00137.jpg",
+        "objective": 0.07364261150360107,
+        "psnr": 22.856390964130068
+      },
+      {
+        "split": "heldout",
+        "camera": "00145.jpg",
+        "objective": 0.09421787261962891,
+        "psnr": 20.999079482090227
+      },
+      {
+        "split": "heldout",
+        "camera": "00153.jpg",
+        "objective": 0.0747633844614029,
+        "psnr": 22.672918028360435
+      },
+      {
+        "split": "heldout",
+        "camera": "00161.jpg",
+        "objective": 0.10067192316055298,
+        "psnr": 19.78278980215232
+      },
+      {
+        "split": "heldout",
+        "camera": "00169.jpg",
+        "objective": 0.0711719274520874,
+        "psnr": 22.59919581944352
+      },
+      {
+        "split": "heldout",
+        "camera": "00177.jpg",
+        "objective": 0.06614075303077699,
+        "psnr": 22.233233836677417
+      },
+      {
+        "split": "heldout",
+        "camera": "00185.jpg",
+        "objective": 0.09935895800590516,
+        "psnr": 20.11978634288745
+      },
+      {
+        "split": "heldout",
+        "camera": "00193.jpg",
+        "objective": 0.11112983226776124,
+        "psnr": 18.92498726047456
+      },
+      {
+        "split": "heldout",
+        "camera": "00201.jpg",
+        "objective": 0.0762619197368622,
+        "psnr": 22.77338249402693
+      },
+      {
+        "split": "heldout",
+        "camera": "00209.jpg",
+        "objective": 0.08311809003353118,
+        "psnr": 22.04091721420143
+      },
+      {
+        "split": "heldout",
+        "camera": "00217.jpg",
+        "objective": 0.08432283401489259,
+        "psnr": 21.130760132734956
+      },
+      {
+        "split": "heldout",
+        "camera": "00225.jpg",
+        "objective": 0.11695407629013062,
+        "psnr": 18.60553544753501
+      },
+      {
+        "split": "heldout",
+        "camera": "00233.jpg",
+        "objective": 0.053789883852005005,
+        "psnr": 25.5555043155833
+      },
+      {
+        "split": "heldout",
+        "camera": "00241.jpg",
+        "objective": 0.06421497762203217,
+        "psnr": 24.63823382074265
+      },
+      {
+        "split": "heldout",
+        "camera": "00249.jpg",
+        "objective": 0.04314816445112228,
+        "psnr": 27.17398094141454
+      },
+      {
+        "split": "heldout",
+        "camera": "00257.jpg",
+        "objective": 0.05634054839611054,
+        "psnr": 25.076014477188235
+      },
+      {
+        "split": "heldout",
+        "camera": "00265.jpg",
+        "objective": 0.1720861792564392,
+        "psnr": 16.399344209827817
+      },
+      {
+        "split": "heldout",
+        "camera": "00273.jpg",
+        "objective": 0.10265522599220275,
+        "psnr": 19.166245963474577
+      },
+      {
+        "split": "heldout",
+        "camera": "00281.jpg",
+        "objective": 0.12193139791488647,
+        "psnr": 17.58806943826848
+      },
+      {
+        "split": "heldout",
+        "camera": "00289.jpg",
+        "objective": 0.07716032862663269,
+        "psnr": 22.402226009135692
+      },
+      {
+        "split": "heldout",
+        "camera": "00297.jpg",
+        "objective": 0.06980741024017334,
+        "psnr": 22.98897752368593
+      }
+    ]
+  },
+  "clad": {
+    "metrics": [
+      {
+        "split": "train",
+        "camera": "00002.jpg",
+        "objective": 0.048854601383209226,
+        "psnr": 25.27601191126881
+      },
+      {
+        "split": "train",
+        "camera": "00035.jpg",
+        "objective": 0.039324142038822174,
+        "psnr": 27.689078745176516
+      },
+      {
+        "split": "train",
+        "camera": "00068.jpg",
+        "objective": 0.05597942173480988,
+        "psnr": 24.770611976562268
+      },
+      {
+        "split": "train",
+        "camera": "00101.jpg",
+        "objective": 0.03863650560379028,
+        "psnr": 27.68170739925217
+      },
+      {
+        "split": "train",
+        "camera": "00134.jpg",
+        "objective": 0.05706779956817627,
+        "psnr": 24.741075646172753
+      },
+      {
+        "split": "train",
+        "camera": "00167.jpg",
+        "objective": 0.054972675442695615,
+        "psnr": 24.864557353292835
+      },
+      {
+        "split": "train",
+        "camera": "00200.jpg",
+        "objective": 0.04841905534267426,
+        "psnr": 26.127984971746763
+      },
+      {
+        "split": "train",
+        "camera": "00234.jpg",
+        "objective": 0.027203771471977237,
+        "psnr": 31.187752722181553
+      },
+      {
+        "split": "train",
+        "camera": "00267.jpg",
+        "objective": 0.052503435313701635,
+        "psnr": 25.745037237328066
+      },
+      {
+        "split": "train",
+        "camera": "00301.jpg",
+        "objective": 0.040739841759204865,
+        "psnr": 27.03982329921277
+      },
+      {
+        "split": "heldout",
+        "camera": "00001.jpg",
+        "objective": 0.06739843487739564,
+        "psnr": 22.550722654747936
+      },
+      {
+        "split": "heldout",
+        "camera": "00009.jpg",
+        "objective": 0.05430827140808106,
+        "psnr": 24.377951336292767
+      },
+      {
+        "split": "heldout",
+        "camera": "00017.jpg",
+        "objective": 0.04559210538864136,
+        "psnr": 24.812793499329505
+      },
+      {
+        "split": "heldout",
+        "camera": "00025.jpg",
+        "objective": 0.07673589885234833,
+        "psnr": 22.698364873032098
+      },
+      {
+        "split": "heldout",
+        "camera": "00033.jpg",
+        "objective": 0.059113225340843206,
+        "psnr": 24.00513946362176
+      },
+      {
+        "split": "heldout",
+        "camera": "00041.jpg",
+        "objective": 0.05146128088235855,
+        "psnr": 25.622360409365758
+      },
+      {
+        "split": "heldout",
+        "camera": "00049.jpg",
+        "objective": 0.0607167661190033,
+        "psnr": 23.92869678877596
+      },
+      {
+        "split": "heldout",
+        "camera": "00057.jpg",
+        "objective": 0.06734363734722137,
+        "psnr": 23.633463239981786
+      },
+      {
+        "split": "heldout",
+        "camera": "00065.jpg",
+        "objective": 0.06526808738708496,
+        "psnr": 23.549724949646436
+      },
+      {
+        "split": "heldout",
+        "camera": "00073.jpg",
+        "objective": 0.0656757801771164,
+        "psnr": 23.465599868815094
+      },
+      {
+        "split": "heldout",
+        "camera": "00081.jpg",
+        "objective": 0.06890399158000945,
+        "psnr": 22.722770051716424
+      },
+      {
+        "split": "heldout",
+        "camera": "00089.jpg",
+        "objective": 0.13347179889678956,
+        "psnr": 18.410367596652154
+      },
+      {
+        "split": "heldout",
+        "camera": "00097.jpg",
+        "objective": 0.04680809080600738,
+        "psnr": 24.81340226397505
+      },
+      {
+        "split": "heldout",
+        "camera": "00105.jpg",
+        "objective": 0.047256970405578615,
+        "psnr": 25.790287086798237
+      },
+      {
+        "split": "heldout",
+        "camera": "00113.jpg",
+        "objective": 0.12410396337509157,
+        "psnr": 17.486205662898445
+      },
+      {
+        "split": "heldout",
+        "camera": "00121.jpg",
+        "objective": 0.08250639140605927,
+        "psnr": 21.789127134697193
+      },
+      {
+        "split": "heldout",
+        "camera": "00129.jpg",
+        "objective": 0.09305090308189393,
+        "psnr": 20.975190469083323
+      },
+      {
+        "split": "heldout",
+        "camera": "00137.jpg",
+        "objective": 0.07570334970951081,
+        "psnr": 22.695595100075238
+      },
+      {
+        "split": "heldout",
+        "camera": "00145.jpg",
+        "objective": 0.09696057438850403,
+        "psnr": 20.715910368781895
+      },
+      {
+        "split": "heldout",
+        "camera": "00153.jpg",
+        "objective": 0.07896180748939514,
+        "psnr": 22.32639276851657
+      },
+      {
+        "split": "heldout",
+        "camera": "00161.jpg",
+        "objective": 0.1032327950000763,
+        "psnr": 19.37018431003423
+      },
+      {
+        "split": "heldout",
+        "camera": "00169.jpg",
+        "objective": 0.07320803701877596,
+        "psnr": 22.63513886069916
+      },
+      {
+        "split": "heldout",
+        "camera": "00177.jpg",
+        "objective": 0.0680238962173462,
+        "psnr": 22.057755925188754
+      },
+      {
+        "split": "heldout",
+        "camera": "00185.jpg",
+        "objective": 0.08274684548377992,
+        "psnr": 21.927238777991462
+      },
+      {
+        "split": "heldout",
+        "camera": "00193.jpg",
+        "objective": 0.11323203444480896,
+        "psnr": 18.707771856772265
+      },
+      {
+        "split": "heldout",
+        "camera": "00201.jpg",
+        "objective": 0.07122416496276857,
+        "psnr": 23.410713372318604
+      },
+      {
+        "split": "heldout",
+        "camera": "00209.jpg",
+        "objective": 0.08414049148559571,
+        "psnr": 21.692234745468095
+      },
+      {
+        "split": "heldout",
+        "camera": "00217.jpg",
+        "objective": 0.08292465806007386,
+        "psnr": 21.6424326425761
+      },
+      {
+        "split": "heldout",
+        "camera": "00225.jpg",
+        "objective": 0.10766697525978089,
+        "psnr": 19.158299649915918
+      },
+      {
+        "split": "heldout",
+        "camera": "00233.jpg",
+        "objective": 0.051649510860443115,
+        "psnr": 25.599036934098002
+      },
+      {
+        "split": "heldout",
+        "camera": "00241.jpg",
+        "objective": 0.06971482038497925,
+        "psnr": 23.454456252639527
+      },
+      {
+        "split": "heldout",
+        "camera": "00249.jpg",
+        "objective": 0.04371818006038666,
+        "psnr": 26.915431364917453
+      },
+      {
+        "split": "heldout",
+        "camera": "00257.jpg",
+        "objective": 0.04846583753824234,
+        "psnr": 26.045928765911253
+      },
+      {
+        "split": "heldout",
+        "camera": "00265.jpg",
+        "objective": 0.17147493958473206,
+        "psnr": 16.533136439230937
+      },
+      {
+        "split": "heldout",
+        "camera": "00273.jpg",
+        "objective": 0.104299396276474,
+        "psnr": 18.91359426726929
+      },
+      {
+        "split": "heldout",
+        "camera": "00281.jpg",
+        "objective": 0.13304680585861206,
+        "psnr": 16.596234137405027
+      },
+      {
+        "split": "heldout",
+        "camera": "00289.jpg",
+        "objective": 0.07720114290714264,
+        "psnr": 22.388604539481186
+      },
+      {
+        "split": "heldout",
+        "camera": "00297.jpg",
+        "objective": 0.06865024268627168,
+        "psnr": 23.060403124062802
+      }
+    ]
+  }
+}

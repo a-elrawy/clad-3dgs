@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.o
+*.so
+/build/
+/outputs/
+/SOURCES.json
+/verify_package.py
+/results/summary.json
+/results/handwritten-control.json

@@ -1,0 +1,123 @@
+{
+  "train_comparison": {
+    "scene": "train",
+    "seed": 42,
+    "iterations": 30000,
+    "gpu": "RTX 3080 Ti",
+    "clad_commit": "9b4619dbf9db5404429f2dd9e72d3b882999feb9",
+    "loop_seconds": {
+      "native": 1037.625,
+      "clad": 696.802
+    },
+    "reduction_percent": {
+      "loop": 32.846438763082666,
+      "cuda_event": 32.84644973161218,
+      "process": 32.00892873344704
+    },
+    "final_gaussians": {
+      "native": 1092900,
+      "clad": 1089567
+    }
+  },
+  "handwritten_control": {
+    "scope": "Fixed-topology training steps, not full training. manual and manual-aa are two runs of the same handwritten kernels; their gap is the run-to-run variation.",
+    "runs": [
+      {
+        "scene": "train",
+        "session": 0,
+        "gaussians": 1088747,
+        "heldout_views": 38,
+        "wall_ms": {
+          "median_step_ms": {
+            "manual": 24.2590784,
+            "manual-aa": 24.2992124,
+            "clad": 24.289287899999998
+          },
+          "clad_extra_percent": 0.12452863831793337,
+          "manual_repeat_percent": 0.1654390959880736
+        },
+        "event_ms": {
+          "median_step_ms": {
+            "manual": 24.254975891113283,
+            "manual-aa": 24.29286346435547,
+            "clad": 24.284022521972656
+          },
+          "clad_extra_percent": 0.11975534830366286,
+          "manual_repeat_percent": 0.1562053634366567
+        }
+      },
+      {
+        "scene": "truck",
+        "session": 0,
+        "gaussians": 2142393,
+        "heldout_views": 2,
+        "wall_ms": {
+          "median_step_ms": {
+            "manual": 28.361877099999997,
+            "manual-aa": 28.4281071,
+            "clad": 28.409025000000003
+          },
+          "clad_extra_percent": 0.16623688140868786,
+          "manual_repeat_percent": 0.23351768913772997
+        },
+        "event_ms": {
+          "median_step_ms": {
+            "manual": 28.357528686523438,
+            "manual-aa": 28.41364440917969,
+            "clad": 28.389682006835937
+          },
+          "clad_extra_percent": 0.11338548104080637,
+          "manual_repeat_percent": 0.1978865058255952
+        }
+      },
+      {
+        "scene": "truck",
+        "session": 1,
+        "gaussians": 2142393,
+        "heldout_views": 2,
+        "wall_ms": {
+          "median_step_ms": {
+            "manual": 28.6332316,
+            "manual-aa": 28.6104983,
+            "clad": 28.695784099999997
+          },
+          "clad_extra_percent": 0.2980926760020708,
+          "manual_repeat_percent": -0.0793948106088016
+        },
+        "event_ms": {
+          "median_step_ms": {
+            "manual": 28.627651977539063,
+            "manual-aa": 28.605850219726562,
+            "clad": 28.689407348632812
+          },
+          "clad_extra_percent": 0.2920980438072318,
+          "manual_repeat_percent": -0.07615629053198125
+        }
+      },
+      {
+        "scene": "train",
+        "session": 1,
+        "gaussians": 1088747,
+        "heldout_views": 38,
+        "wall_ms": {
+          "median_step_ms": {
+            "manual": 24.883077,
+            "manual-aa": 24.8599657,
+            "clad": 24.9156169
+          },
+          "clad_extra_percent": 0.22385871594343687,
+          "manual_repeat_percent": -0.09287959041399674
+        },
+        "event_ms": {
+          "median_step_ms": {
+            "manual": 24.879373168945314,
+            "manual-aa": 24.855448913574218,
+            "clad": 24.90900421142578
+          },
+          "clad_extra_percent": 0.21546703114387888,
+          "manual_repeat_percent": -0.09616100537838124
+        }
+      }
+    ]
+  }
+}

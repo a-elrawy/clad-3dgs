@@ -1,0 +1,3 @@
+results/*.csv -text whitespace=cr-at-eol
+*.patch -text -whitespace
+reproduction/runner/*.patch -text -whitespace

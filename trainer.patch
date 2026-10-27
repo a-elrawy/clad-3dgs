@@ -1,0 +1,47 @@
+--- a/train.py
++++ b/train.py
+@@ -12,0 +13 @@
++from clad_training import begin_step, after_backward, after_step
+@@ -43 +44 @@
+-def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoint_iterations, checkpoint, debug_from):
++def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoint_iterations, checkpoint, debug_from, clad_consume=False):
+@@ -111 +112,2 @@
+-        render_pkg = render(viewpoint_cam, gaussians, pipe, bg, use_trained_exp=dataset.train_test_exp, separate_sh=SPARSE_ADAM_AVAILABLE)
++        clad_policy = begin_step(gaussians, iteration, opt, dataset, testing_iterations, saving_iterations, clad_consume)
++        render_pkg = render(viewpoint_cam, gaussians, pipe, bg, use_trained_exp=dataset.train_test_exp, separate_sh=SPARSE_ADAM_AVAILABLE, clad_policy=clad_policy)
+@@ -142,0 +145 @@
++        after_backward(gaussians, iteration, loss)
+@@ -186,0 +190,2 @@
++
++            after_step(gaussians, iteration)
+@@ -269,0 +275 @@
++    parser.add_argument("--clad_consume", action="store_true")
+@@ -282 +288 @@
+-    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint, args.debug_from)
++    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint, args.debug_from, clad_consume=args.clad_consume)
+--- a/gaussian_renderer/__init__.py
++++ b/gaussian_renderer/__init__.py
+@@ -12,0 +13 @@
++from clad_training import render_consumer, activate_consumer
+@@ -18 +19 @@
+-def render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, scaling_modifier = 1.0, separate_sh = False, override_color = None, use_trained_exp=False):
++def render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, scaling_modifier = 1.0, separate_sh = False, override_color = None, use_trained_exp=False, clad_policy=None):
+@@ -56 +58,2 @@
+-    opacity = pc.get_opacity
++    activated = activate_consumer(pc, clad_policy, eligible=not pipe.compute_cov3D_python and not pipe.convert_SHs_python and not separate_sh and override_color is None)
++    opacity = activated[2] if activated is not None else pc.get_opacity
+@@ -67,2 +70,2 @@
+-        scales = pc.get_scaling
+-        rotations = pc.get_rotation
++        scales = activated[1] if activated is not None else pc.get_scaling
++        rotations = activated[0] if activated is not None else pc.get_rotation
+@@ -71,0 +73 @@
++    consume_sh = clad_policy is not None and not pipe.compute_cov3D_python and not pipe.convert_SHs_python and not separate_sh and override_color is None
+@@ -84 +86 @@
+-            else:
++            elif not consume_sh:
+@@ -90 +92,3 @@
+-    if separate_sh:
++    if consume_sh:
++        rendered_image, radii, depth_image = render_consumer(pc, means3D, means2D, opacity, scales, rotations, raster_settings, clad_policy)
++    elif separate_sh:

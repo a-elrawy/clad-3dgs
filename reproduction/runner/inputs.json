@@ -1,0 +1,18 @@
+{
+  "trainer_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "native_commit": "9c5c2028f6fbee2be239bc4c9421ff894fe4fbe0",
+  "torch": "2.5.1+cu121",
+  "native": {
+    "ext.cpp": "102d6ca2a07cf57717e5828c49a7100841cc0147f7373de768070f06bc4909ef",
+    "rasterize_points.cu": "462bb16c83f41e3d029cab20d46a951ddd4db10931da5fc6595537268babbd32",
+    "cuda_rasterizer/backward.cu": "31074cea35919f108eb84770e170be844b95746f7fb1dd64024c3f9b1de57606",
+    "cuda_rasterizer/forward.cu": "4bfb6830a138bd016f39fa4558f998825d4182b12cfbda2f62bed0ab75042b54",
+    "cuda_rasterizer/rasterizer_impl.cu": "e338380e2d4631cf842904fbf87025ddb46d49b5f1a5a22fd53bf8ada0ec1109",
+    "diff_gaussian_rasterization/__init__.py": "b3ac794d758c546d32860c5a2fd42b9ac6791d0822d7811d05c8d131a8a38a63"
+  },
+  "trainer": {
+    "train.py": "0fc5d65b0c789b250b6e770757925909f5ea94cdc7c5e977eaaec99ddc03e92c",
+    "gaussian_renderer/__init__.py": "a25cf5fdb22cd8757fb2a1e37b75352042d65b16138a9fa6243f8616ca1369b8",
+    "scene/gaussian_model.py": "546ba41528a879af4d83bd280a3ef3cbcca9a5e9132204185aaa8f8ee9ffa310"
+  }
+}

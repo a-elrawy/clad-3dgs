@@ -1,0 +1,72 @@
+{
+  "full_training_trajectories_max": 2,
+  "scenes": [
+    "Train"
+  ],
+  "seeds": [
+    42
+  ],
+  "final_global_iteration": 16,
+  "stage_endpoints": [
+    8,
+    16
+  ],
+  "mode_order_by_stage": [
+    [
+      "native",
+      "clad"
+    ],
+    [
+      "clad",
+      "native"
+    ]
+  ],
+  "budget": {
+    "main_loop_updates_upper_bound": 32,
+    "short_probe_checkpoints": [],
+    "probe_modes": [
+      "native",
+      "native-aa",
+      "clad"
+    ],
+    "probe_warmup_blocks_per_mode": 3,
+    "probe_measured_blocks_per_mode": 12,
+    "updates_per_probe_block": 10,
+    "short_probe_updates_total": 0,
+    "short_probe_iteration_overhead_percent": 0,
+    "probe_untimed_note": "No additional checkpoint probes; the two-scene refinement comparisons already exist.",
+    "probe_terminal_checks_total": 0,
+    "short_probe_iterations_including_terminal_checks": 0
+  },
+  "quality_limits": {
+    "psnr_drop_db_max_per_view": null,
+    "objective_increase_fraction_max_per_view": 0.02
+  },
+  "timing": {
+    "host_clock": "CLOCK_MONOTONIC_RAW when supported",
+    "secondary": "CUDA events",
+    "native_AA_max_percent": 1,
+    "no_automatic_retry": true,
+    "no_trimming": true,
+    "full_job_wall_time_is_one_paired_observation": true
+  },
+  "description": "Staged 16-update wiring preflight for the guarded activation consumer; no speed or quality claim.",
+  "native_options": {
+    "eval": true,
+    "resolution": 1,
+    "data_device": "cpu",
+    "densify_from_iter": 2,
+    "densify_until_iter": 11,
+    "densification_interval": 4,
+    "opacity_reset_interval": 9,
+    "densify_grad_threshold": 1e-12
+  },
+  "acceptance": {
+    "metric": "relative increase of arithmetic mean held-out objective (0.8 L1 + 0.2 (1 - fused SSIM))",
+    "maximum_fraction": 0.02,
+    "preferred_fraction": 0.01,
+    "worst_views": "report only",
+    "per_view_limits": "diagnostic only; do not stop on one view"
+  },
+  "fixture": true
+}
