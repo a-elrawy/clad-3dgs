@@ -2,10 +2,9 @@
   "scene": "Tanks and Temples Train",
   "seed": 42,
   "checkpoint_iteration": 30000,
-  "video_sha256": "82308f68d3360bca5cfeea669670556fd9b3995ee4c368e24894e6591b74f4ee",
-  "fps": 6,
+  "fps": 4,
   "frame_count": 46,
-  "duration_seconds": 7.666666666666667,
+  "duration_seconds": 11.5,
   "camera_order": [
     "00001.jpg",
     "00009.jpg",
@@ -53,5 +52,11 @@
   "forward_calls_per_mode": 38,
   "backward_calls": 0,
   "optimizer_updates": 0,
-  "note": "Each panel uses the same held-out camera. The two modes replay their distinct saved 30k models with their original renderer binaries. Resized display video is qualitative only."
+  "note": "Each panel uses the same held-out camera. The two modes replay their distinct saved 30k models with their original renderer binaries. The source video was slowed and palette-converted for the looping GIF. Resized display frames are qualitative only.",
+  "source_video_sha256": "82308f68d3360bca5cfeea669670556fd9b3995ee4c368e24894e6591b74f4ee",
+  "gif_sha256": "6f88fe6d9df8017f094a378c1c752a9b41786c5069b3a4b1adf6c8f60bb1a873",
+  "display_size_pixels": [
+    1104,
+    270
+  ]
 }

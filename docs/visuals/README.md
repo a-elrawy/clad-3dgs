@@ -14,7 +14,7 @@ scene Gaussians project to overlapping elliptical footprints, which contribute
 to image pixels. Image loss supplies gradients for training the Gaussian
 parameters. It is an explanatory diagram, not a measured render.
 
-![3DGS projection and image-gradient schematic](differentiable-splats.png)
+<p align="center"><img src="differentiable-splats.png" width="850" alt="3DGS projection and image-gradient schematic"></p>
 
 ## Where Clad runs
 
@@ -27,13 +27,15 @@ explicit integration work, not automatic compiler fusion.
 
 ## Matched-camera walkthrough
 
-[Watch the 7.7-second target/native/hybrid comparison](train-matched-cameras.mp4).
-It visits all 38 held-out cameras in filename order. Each frame compares the
-same camera's photograph, original native render, and hybrid render with
-Clad-generated adjoints. Both models are the distinct saved 30k checkpoints;
-the clip is a forward-only replay, not a training animation. Frames are resized
-for display. [Video provenance](video-provenance.json) records the camera order,
-checkpoint and renderer hashes, and zero backward or optimizer calls.
+![Slower matched-camera walkthrough of target, native, and hybrid renders](train-matched-cameras.gif)
+
+The 11.5-second looping GIF visits all 38 held-out cameras in filename order.
+Each frame compares the same camera's photograph, original native render, and
+hybrid render with Clad-generated adjoints. Both models are distinct saved 30k
+checkpoints. The GIF is a forward-only replay, not a training animation.
+Frames are resized for display. [GIF provenance](gif-provenance.json) records
+the camera order, checkpoint and renderer hashes, and zero backward or
+optimizer calls.
 
 ## A central held-out view
 

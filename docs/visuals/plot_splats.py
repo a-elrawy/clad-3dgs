@@ -10,8 +10,9 @@ OUTPUT = Path(__file__).with_name("differentiable-splats.png")
 
 fig, ax = plt.subplots(figsize=(12, 5.4))
 fig.patch.set_facecolor("white")
+ax.set_position([0.05, 0.01, 0.90, 0.91])
 ax.set_xlim(0, 12)
-ax.set_ylim(0, 5.4)
+ax.set_ylim(0.7, 5.1)
 ax.axis("off")
 
 ink = "#172c3c"
@@ -32,9 +33,9 @@ def arrow(start, end, color=muted):
                  mutation_scale=18, linewidth=2.0, color=color))
 
 
-fig.text(0.06, 0.96, "3D Gaussian Splatting: scene parameters to gradients",
+fig.text(0.06, 0.90, "3D Gaussian Splatting: scene parameters to gradients",
          fontsize=18, weight="bold", color=ink)
-fig.text(0.06, 0.90, "Schematic of projection, blending, and the training signal",
+fig.text(0.06, 0.83, "Schematic of projection, blending, and the training signal",
          fontsize=10.5, color=muted)
 
 panel(0.35, "1  Scene parameters")
