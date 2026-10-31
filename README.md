@@ -18,6 +18,7 @@ All numbers are from Tanks and Temples scenes on an RTX 3080 Ti. Details are in 
 - [QUICKSTART.md](QUICKSTART.md): versions, build, checks, train/render/metrics.
 - [INTEGRATION.md](INTEGRATION.md): layouts, Adam, activations, fallback.
 - [results/README.md](results/README.md): the Train run.
+- [docs/visuals/README.md](docs/visuals/README.md): held-out render comparisons and per-view quality variation.
 - [reproduction/README.md](reproduction/README.md): how to run that comparison again.
 - [controls/README.md](controls/README.md): the handwritten derivatives.
 - [VALIDATION.md](VALIDATION.md): what was checked.
